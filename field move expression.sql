@@ -1,3 +1,6 @@
+-- outputs 'locality_name 8fig_UTM_coordinates  unit_name plane_type strike/dip dip_direction (as cardinal)'
+-- e.g. '06E 3817 8963  Upper Slate  Bedding 296/45 NE'
+
 concat(
 right("localityName",3), ' ', 
 left(right(round("x", 0),5), 4), ' ', 
